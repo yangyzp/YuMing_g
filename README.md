@@ -32,15 +32,17 @@
 2.  在终端上输入各项参数
 
 方法三：
-1.  Centos:
  - 数据库对接
- ![Centos-glzjinmod](https://raw.githubusercontent.com/yangyzp/node.sh/master/img/Centos-glzjinmod.png)
+ ![glzjinmod](https://raw.githubusercontent.com/yangyzp/node.sh/master/img/glzjinmod.png)
    ```
-   yum install wget screen -y && screen -S node
+   yum install wget screen -y && screen -S node     #Centos 
+   apt install wget screen -y && screen -S node     #Debian/Ubuntu 
+   ```
+   ```
    wget -N --no-check-certificate https://raw.githubusercontent.com/dump0/node.sh/master/node.sh && chmod +x node.sh && Auto_Install="y" INTERFACE="2" NODE_ID="3" RESTART="4" SPEEDTEST="0" CLOUDSAFE="1" ANTISSATTACK="0" AUTOEXEC="0" MU_SUFFIX="zhaoj.in" MU_REGEX="%5m%id.%suffix" MYSQL_HOST="1.1.1.1" MYSQL_PORT="3306" MYSQL_USER="sspanel" MYSQL_PASS="123456" MYSQL_DB="sspanel" ./node.sh
    ```
  - API对接
- ![Centos-API](https://raw.githubusercontent.com/yangyzp/node.sh/master/img/Centos-API.png)
+ ![API](https://raw.githubusercontent.com/yangyzp/node.sh/master/img/API.png)
    ```
    yum install wget screen -y && screen -S node     #Centos 
    apt install wget screen -y && screen -S node     #Debian/Ubuntu 
