@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<title>官网发布页</title>
+	<title>官网发布页①</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<meta name=description content="">
 	<meta name=keywords content="">
@@ -26,20 +26,42 @@
 				</div>
 				<div class="alert-concent">
 					<p style="margin:-10px 0px 0px 0px;">
-						<a href="https://uinio.cc" style="color:#4AB0F7;font-size:30px;">uinio.cc</a>
+					    <p style="margin:10px 0px 10px 0px;color:#4AB0F7;font-size:22px;">官网①：<a style="color:#4AB0F7; font-size:30px;" href="https://uinio.net">uinio.net</a></p>
+					    <p style="margin:15px 0px 10px 0px;color:#4AB0F7;font-size:22px;">官网②：<a style="color:#4AB0F7; font-size:30px;" href="https://uinio.cc">uinio.cc</a></p>
 					</p>
 					<br>
-					<p style="color:#2b6892;">请注意收藏本页，以下为备用官网</p>
-					<p style="margin:8px 0px 0px 0px;"><a style="color:#4AB0F7;font-size:18px;">备用官网①：uinio.net</a></p>
-					<p style="margin:8px 0px 10px 0px;"><a style="color:#4AB0F7;font-size:18px;">备用官网②：<!-- uinio.in --></a></p>
+					<p style="color:#2b6892;">● 请注意收藏本页。</p>
+					<p style="margin:8px 0px 8px 0px;color:#2b6892;">● 由于国内运营商可能存在域名污染、劫持等问题。</p>
+					<p style="margin:8px 0px 8px 0px;color:#2b6892;">● 以上官网会不定期切换。</p>
+					<p style="color:#2b6892;">● 后续新官网也会发布在此页面。</p>
+			<!--	<p style="margin:8px 0px 0px 0px;"><a style="color:#4AB0F7;font-size:18px;">备用官网①：uinio.net</a></p>
+					<p style="margin:8px 0px 10px 0px;"><a style="color:#4AB0F7;font-size:18px;">备用官网②： uinio.in </a></p>  -->
 					<hr>
-					<p style="margin:20px 0px 40px 0px;">如打不开官网，<a href="/unable_open.html" style="color:#4AB0F7;font-size:18px;">点 我</a></p>
+					<p style="margin:20px 0px 40px 0px;">如以上官网全都打不开官，<a href="/unable_open.html" style="color:#4AB0F7;font-size:18px;">点 我</a></p>
 				</div>
-				<a id="js-alert-btn" class="alert-btn" href="javascript:top.location.href='https://uinio.cc/';">立即进入</a>
+		<!--	<a id="js-alert-btn" class="alert-btn" href="javascript:top.location.href='https://uinio.net/';">立即进入</a>   -->
 			</div>
 
 		</div>
+
 		<script>function alertSet(e) {
+				document.getElementById("js-alert-box").style.display = "block",
+				document.getElementById("js-alert-head").innerHTML = e;
+				var t = 0,
+				n = document.getElementById("js-sec-circle");
+				document.getElementById("js-sec-text").innerHTML = t,
+				setInterval(function() {
+						t -= 1,
+						document.getElementById("js-sec-text").innerHTML = t;
+						var e = Math.round(t / 60 * 735);
+						n.style.strokeDashoffset = e - 735
+				},	
+				970);
+			}</script>
+
+
+
+<!--	<script>function alertSet(e) {
 				document.getElementById("js-alert-box").style.display = "block",
 				document.getElementById("js-alert-head").innerHTML = e;
 				var t = 60,
@@ -55,11 +77,13 @@
 					}
 				},	
 				970);
-			}</script>
+			}</script>  -->
 	</body>
 
 </html>
-<script>alertSet('最新官网');</script>
+<script>alertSet('官网');</script>
+
+<!--
 <script type="text/javascript">function clickIE4() {
 		if (event.button == 2) {
 			return false
@@ -85,7 +109,10 @@
 		document.onmousedown = clickIE4;
 		document.onkeydown = OnDeny()
 	}
-	document.oncontextmenu = new Function("return false");</script>
+	document.oncontextmenu = new Function("return false");</script>  -->
+
+
+
 <html/>
 	
 	
